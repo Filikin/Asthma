@@ -1,0 +1,4 @@
+<apex:page standardController="Opportunity" extensions="MarkDonationsPostedController" recordSetVar="donations" cache="true" action="{!markPosted}">
+<h1>Report on Donations Marked Posted</h1><br/>
+<apex:pageMessages />
+</apex:page>
