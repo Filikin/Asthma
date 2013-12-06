@@ -26,5 +26,12 @@ public class TriggerDispatcher
 			activeFunction.MainEntry (TriggerObject, isBefore, isDelete, isAfter, isInsert, isUpdate, isExecuting, newList, newMap, oldList, oldMap);
 			InTrigger = false;
 		}
+		else if (TriggerObject == 'Fundraising')
+		{
+			InTrigger = true;
+			activeFunction = new CreateUpdateFundraisingClass();
+			activeFunction.MainEntry (TriggerObject, isBefore, isDelete, isAfter, isInsert, isUpdate, isExecuting, newList, newMap, oldList, oldMap);
+			InTrigger = false;
+		}
 	}
 }
